@@ -10,7 +10,7 @@ buildscript {
 }
 
 group 'dk.edutor'
-version '0.9'
+version '0.9.1'
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
@@ -35,6 +35,10 @@ compileTestKotlin {
     }
 
 publishing {
+    repositories {
+        mavenLocal()
+        maven { url myMavenRepoWriteUrl }
+        }
     publications {
         maven(MavenPublication) {
             from components.java
