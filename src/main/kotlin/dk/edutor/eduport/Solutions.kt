@@ -3,22 +3,28 @@ package dk.edutor.eduport
 abstract class Solution(val solver: PersonIdentifier, val id: Long)
 
 class StringSolution(
-    val text: String,
-    solver: PersonIdentifier,
-    id: Long
+        val answer: String,
+        solver: PersonIdentifier,
+        id: Long
     //) : Solution(solver, id)
     ) : Solution(id = id, solver = solver)
 
+class CMSolution(
+        val answers:List<String>,
+         solver: PersonIdentifier,
+         id: Long
+    ):Solution(id = id, solver = solver)
+
 /* Java:
   public class StringSolution extends Solution {
-    private final String text;
+    private final String answer;
 
-    StringSolution(String text, PersonIdentifier solver, long id) {
+    StringSolution(String answer, PersonIdentifier solver, long id) {
       super(solver, id);
-      this.text = text;
+      this.answer = answer;
       }
 
-    public String getText() { return text; }
+    public String getAnswer() { return answer; }
     }
  */
 
