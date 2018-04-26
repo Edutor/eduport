@@ -9,7 +9,7 @@ class StringSolution(
     //) : Solution(solver, id)
     ) : Solution(id = id, solver = solver)
 
-class CMSolution(
+class MCSolution(
         val answers:List<String>,
          solver: PersonIdentifier,
          id: Long

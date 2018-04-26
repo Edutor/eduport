@@ -9,7 +9,7 @@ class StringChallenge(
 ) : Challenge(description)
 
 
-class CMChallenge(
+class MCChallenge(
 //      answers have a string question and boolean: right question
         val question: String,
         val answers: Map<String,Boolean>,
