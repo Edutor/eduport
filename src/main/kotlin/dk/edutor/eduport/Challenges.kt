@@ -11,10 +11,7 @@ class StringChallenge(
 
 
 class MCChallenge(
-<<<<<<< HEAD
         val id: Int,
-=======
->>>>>>> b423d79e398cf312ce1ddc28d5238a74be9a879e
 //      answers have a string question and boolean: right question
         val question: String,
         val answers: Map<String,Boolean>,
