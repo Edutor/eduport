@@ -12,8 +12,9 @@ class StringChallenge(
 
 class MCChallenge(
         val id: Int,
-//      answers have a string question and boolean: right question
         val question: String,
+        val imgs: List<String>,
+//      answers have a string question and boolean: right question
         val answers: Map<String,Boolean>,
         description: String,
         tags: List<String>
