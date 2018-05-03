@@ -2,10 +2,10 @@ package dk.edutor.eduport
 
 interface Port {
   fun sayHello(text: String) : String
-  fun check(challenge: Challenge, solution: Solution): Assessment
+  fun check(solution: Solution): Assessment
   }
 
-open class PersonIdentifier(val id: Long)
+open class Person(val id: Long)
 
-open class Assessment(val solution: Solution, val grade: Int)
+open class Assessment(val solution: Solution, val grade: Double)
 
