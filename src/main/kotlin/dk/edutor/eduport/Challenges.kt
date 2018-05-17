@@ -20,3 +20,9 @@ class MCChallenge(
     val answers: Map<String,Boolean>
     ) : Challenge(id, description, tags)
 
+class WebChallenge(
+        id: Int,
+        description: String,
+        tags: List<String>
+//TODO:Junit class file reference
+) : Challenge(id, description, tags)

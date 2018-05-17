@@ -1,24 +1,31 @@
 package dk.edutor.eduport
 
 abstract class Solution(
-    val id: Int,
-    val challenge: Challenge,
-    val solver: Person
-    )
+        val id: Int,
+        val challenge: Challenge,
+        val solver: Person
+)
 
 class StringSolution(
-    id: Int,
-    challenge: StringChallenge,
-    solver: Person,
-    val answer: String
-    ) : Solution(id, challenge, solver)
+        id: Int,
+        challenge: StringChallenge,
+        solver: Person,
+        val answer: String
+) : Solution(id, challenge, solver)
 
 class MCSolution(
-    id: Int,
-    challenge: MCChallenge,
-    solver: Person,
-    val answers:List<String>
-    ) : Solution(id, challenge, solver)
+        id: Int,
+        challenge: MCChallenge,
+        solver: Person,
+        val answers: List<String>
+) : Solution(id, challenge, solver)
+
+class WebSolution(
+        id: Int,
+        challenge: WebChallenge,
+        solver: Person,
+        val url: String
+) : Solution(id, challenge, solver)
 
 /* Java:
   public class StringSolution extends Solution {
